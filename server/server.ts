@@ -78,12 +78,12 @@ new FileRestService(app, fileDatabase).init();
 TestData.init();
 
 // set the home page route
-app.get("/", function (req, res) {
+app.get("/", function(req, res) {
 
     // ejs render automatically looks in the views folder
     res.render("./src/index.html");
 });
 
-app.listen(port, function () {
-    console.log("Path example server running on http://localhost:" + port);
+app.listen(8080, function () {
+    console.log("Path example server running on" + port);
 });
