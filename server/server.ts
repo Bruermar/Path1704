@@ -81,7 +81,7 @@ TestData.init();
 app.get("/", function (req, res) {
 
     // ejs render automatically looks in the views folder
-    res.render("../index.html");
+    res.render("./src/index.html");
 });
 
 app.listen(port, function () {
